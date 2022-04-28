@@ -39,7 +39,7 @@ def main():
         # Receive shift amount in integer
         key = int(input("Shift Amount = \t"))
         # Result
-        print("Cipher Text = \t" + decrypt(encrypted_message, key))
+        print("Plain Text = \t" + decrypt(encrypted_message, key))
     else:
         try:
             # Code that has the potential to cause an exception
