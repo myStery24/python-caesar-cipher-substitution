@@ -1,5 +1,5 @@
 # Encryption & Decryption using Substitution Algorithm
-A Python program that encrypts the original string (plaintext) and decrypts the ciphertext (encrypted string) using a substitution algorithm.
+A Python program that encrypts the original string (plaintext) and decrypts the ciphertext (encrypted string) using a substitution algorithm. The program prompts users to choose between two options: encryption or decryption. Next, users need to input a message and a shift amount.
 
 ### Features
 - Encryption: Encrypt strings with a shift amount.
