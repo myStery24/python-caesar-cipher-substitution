@@ -1,5 +1,5 @@
 # Encryption & Decryption using Substitution Algorithm
-A Python program that encrypts the original string (plaintext) and decrypts the ciphertext (encrypted string) using a substitution algorithm. The program prompts users to choose between two options: encryption or decryption. Next, users need to input a message and a shift amount.
+A Python program that encrypts the original string (plaintext) and decrypts the ciphertext (encrypted string) using a substitution algorithm. The program prompts users to choose between two options: encryption or decryption. Next, users input a message (plaintext/ciphertext) and a shift amount. The message can contain any alphabets/characters (A/a to Z/z), numbers/integers and special characters, while the shift amount accepts only number/integer. Additionally, this program accepts a message up to a length limitation of 100 characters only. With that said, if users enter more than this limit, this program will throw an error message. 
 
 ### Features
 - Encryption: Encrypt strings with a shift amount.
