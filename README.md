@@ -1,25 +1,25 @@
-# Encryption & Decryption Message using Substitution Algorithm
-A Python program that encrypts the original string (plaintext) and decrypts the ciphertext (encrypted string) using a substitution algorithm. The program prompts users to choose between two options: encryption or decryption. Next, users input a message (plaintext/ciphertext) and a shift amount. The message can contain any alphabets/characters (A/a to Z/z), numbers/integers and special characters, while the shift amount accepts only number/integer. Additionally, this program accepts a message up to a length limitation of 100 characters only. With that said, if users enter more than this limit, this program will throw an error message. 
+# Image Encryption & Decryption
+A MATLAB program that encrypts and decrypts an image using XOR (One Time Pad) operation. XOR operation encrypts the plaintext and decrypts its ciphertext using the same key which makes the ciphertext hard to crack by brute force (Wagner, 2020). This program presents a graphical user interface (GUI) to users that let them choose between uploading, encrypting or decrypting an image. The accepted image formats are Joint Photographic Experts Group (.jpg), Tag Image File Format (.tif/.tiff) and Portable Graphics Format (.png) in either true-colour (RGB) or grayscale images. An encryption key is generated automatically to scramble and rearrange the information that represents the input image. The output will be saved in the folder named images.
 
 ### Features
-- Encryption: Encrypt strings with a shift amount.
-- Decryption: Decrypt strings with a shift amount.
+- Encryption: Encrypt images with an auto generated key.
+- Decryption: Decrypt images with the encrypted key.
 
 ### Files
-| Name             | Description                                                               |
-|------------------|---------------------------------------------------------------------------|
-| caesar_cipher.py | Contains the `main()` function. Execute this file.                        |
-| common.py        | Contains the `menu()` and `check_special_char()` functions.               |
-| decryption.py    | Contains `decrypt()` function to decrypt the ciphertext to the plaintext. |
-| encryption.py    | Contains `encrypt()` function to encrypt the plaintext to the ciphertext. |
+| Name                   | Description                                                                            |
+|------------------------|----------------------------------------------------------------------------------------|
+| results                | A folder to store/save the encrypted (Encoded.jpg) and decrypted (Decoded.jpg) images. |
+| cameraman.tif          | A grayscale image in TIF format.                                                       |
+| FSKTM_Image.png        | A colour image in PNG format.                                                          |
+| imageEncryptionGui.fig | Edit this file if you want to make changes to the user interface of the program.       |
+| imageEncryptionGui.m   | Run this file to begin with the encryption and decryption operation.                   |
+| imageProcess.m         | Encrypt and decrypt using XOR.                                                         |
+| keyGen.m               | Generate a key.                                                                        |
+| Lena.jpg               | A grayscale image in JPG format.                                                       |
+| license.txt            | A license document.                                                                    |
 
 ### References
-| No. | Website                                                                                                                                                                                                                                                  |
-|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.  | [CAESAR CIPHER : PYTHON IMPLEMENTATION](https://medium.com/@lazyendian_bit/caesar-cipher-python-implementation-982593f1ab45)                                                                                                                             |
-| 2.  | [Iterating a Python Cipher from Scratch](https://tsmith6421.medium.com/iterating-a-python-cipher-from-scratch-b47f601ca74a)                                                                                                                              |
-| 3.  | [Caesar Cipher in Python (Text encryption tutorial)](https://likegeeks.com/python-caesar-cipher/?msclkid=09d01201c6a411eca75e7bbcfa2e48b1)                                                                                                               |
-| 4.  | [Cryptography with Python - Caesar Cipher](https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_caesar_cipher.htm?msclkid=09cfa17bc6a411ecaadc347000f279a6)                                                                  |
-| 5.  | https://en.wikipedia.org/wiki/Caesar_cipher                                                                                                                                                                                                              |
-| 6.  | [How to Check if a String Contains Special Characters in Python](https://www.knowprogram.com/python/check-special-character-python/?msclkid=1ca6b6c7c69811ecba11c68153753538)                                                                            |
-| 7.  | [ASCII Table](https://ascii-tables.com/#:~:text=Standard%20%EE%80%80ASCII%20table%EE%80%81%20contains%20a%20%EE%80%80table%EE%80%81%20of%20127,255%20codes.%20It%20is%20using%20for%20higher-level%20encoding.?msclkid=9b1da445c6aa11ec909368ceca452f8f) |
+| No. | Website                                                                                                             |
+|-----|---------------------------------------------------------------------------------------------------------------------|
+| 1.  | [Image Encryption by busy](https://www.mathworks.com/matlabcentral/fileexchange/27698-image-encryption)             |
+| 2.  | [Why is Exclusive Or (XOR) Important in Cryptography?](https://blog.boot.dev/cryptography/why-xor-in-cryptography/) |
